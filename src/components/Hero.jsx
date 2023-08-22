@@ -1,5 +1,5 @@
-import React from 'react'
-import banner from '../assets/image_downloader_1692703881115.png'
+import React from 'react';
+import banner from '../assets/image_downloader_1692703881115.png';
 import Social from './Social';
 import Fade from 'react-reveal/Fade';
 
@@ -43,7 +43,7 @@ function Hero() {
             </div>
         </div>
     </>
-  )
+  );
 }
 
 export default Hero
