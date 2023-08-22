@@ -41,7 +41,7 @@ function Hero() {
                     <div className="soon md:text-center md:px-3 lg:px-0">
                         <h2 className='text-[1.9rem] md:text-[2.5rem] lg:text-[2.7rem] text-[#e7d99b] font-extrabold '>Coming Sooooon !</h2>
                     </div>
-                    <div className='px-3 md:px-10 lg:px-0 md:text-center lg:text-left'>              
+                    <div className='px-3 md:px-10 lg:px-0 text-center md:text-center lg:text-left'>              
                         <p className='soon text-[#D7CEA5] leading-8'>Please visit our social platform and become a part of the codemarch family!</p>                      
                     </div>
                     <div className="social-media">                        
