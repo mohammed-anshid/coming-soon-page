@@ -1,11 +1,21 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
-import React from 'react';
+import React, { useState } from 'react';
 import logo from '../assets/name-log.svg'
 
 function Header() {
+  const [navbar, setNavbar] = useState(false);
+
+  const changeBackground = () => {
+    if (window.scrollY > 19) {
+        setNavbar(true)
+    } else {
+        setNavbar(false)
+    }
+  };
+  window.addEventListener("scroll", changeBackground);  
   return (
     
-    <nav className="fixed bg-transparent w-full z-20 top-0 left-0 lg:pt-10">
+    <nav className={`fixed w-full z-20 top-0 left-0 lg:pt-5  ${navbar ? `bg-[#002b23]`:`bg-transparent`}`}>
         <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-[1.5rem]">
                 <a href="" className="flex items-center">
                     <img src={logo} className="h-6 md:h-8 mr-3" alt="Flowbite Logo"/>
